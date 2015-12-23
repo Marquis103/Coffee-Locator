@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="01r-ve-SGW">
+                                <rect key="frame" x="0.0" y="-6" width="600" height="314"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCK-ps-Rmm">
+                                <rect key="frame" x="0.0" y="308" width="600" height="292"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uCK-ps-Rmm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BNu-kb-WIQ"/>
+                            <constraint firstItem="01r-ve-SGW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JeS-0A-rLe"/>
+                            <constraint firstItem="uCK-ps-Rmm" firstAttribute="top" secondItem="01r-ve-SGW" secondAttribute="bottom" id="Syr-tY-Y0f"/>
+                            <constraint firstAttribute="trailing" secondItem="01r-ve-SGW" secondAttribute="trailing" id="WP1-zQ-Dhb"/>
+                            <constraint firstItem="01r-ve-SGW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-6" id="ZVE-FB-1pb"/>
+                            <constraint firstItem="uCK-ps-Rmm" firstAttribute="height" secondItem="01r-ve-SGW" secondAttribute="height" constant="-22" id="mTo-Gx-DbO"/>
+                            <constraint firstAttribute="trailing" secondItem="uCK-ps-Rmm" secondAttribute="trailing" id="x1y-kU-Uhz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uCK-ps-Rmm" secondAttribute="bottom" id="xh9-H9-b1k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coffeeMap" destination="01r-ve-SGW" id="yS8-Lb-Jz3"/>
+                        <outlet property="tableView" destination="uCK-ps-Rmm" id="RZP-id-0oY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="384"/>
+        </scene>
+    </scenes>
+</document>
