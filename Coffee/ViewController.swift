@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var coffeeMap: MKMapView!
     
     var locationManager:CLLocationManager?
-    let distanceSpan:Double = 500
+    let distanceSpan:Double = 1000
     var lastLocation:CLLocation?
     var venues:[Venue]?
     
