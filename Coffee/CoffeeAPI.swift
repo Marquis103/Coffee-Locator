@@ -31,13 +31,13 @@ class CoffeeAPI {
         self.session = Session.sharedSession()
     }
     
-    func getCoffeeShopsWithLocation(location:CLLocation)
+    func getCoffeeShopsWithLocation(location:CLLocation, withRadius radius:String)
     {
         if let session = self.session
         {
             var parameters = location.parametesrs()
             parameters += [Parameter.categoryId: "4bf58dd8d48988d1e0931735"]
-            parameters += [Parameter.radius: "2000"]
+            parameters += [Parameter.radius: radius]
             parameters += [Parameter.limit: "50"]
             
             // Start a "search", i.e. an async call to Foursquare that should return venue data
@@ -91,11 +91,11 @@ class CoffeeAPI {
                                     
                                     do {
                                         try realm.commitWrite()
-                                        print("Committing write...")
+                                        print("Committing write to local realm store...")
                                     }
                                     catch (let e)
                                     {
-                                        print("Y U NO REALM ? \(e)")
+                                        print("WHY NO REALM??! AHHHH!!! \(e)")
                                     }
                             }
                             

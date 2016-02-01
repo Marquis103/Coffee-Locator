@@ -6,6 +6,8 @@
 	<string>en</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Using your location to locate the nearest coffee shop!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Using your locaiton to locate the nearest coffee shop!</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
