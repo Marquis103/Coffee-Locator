@@ -13,3 +13,6 @@ The app consists of a map and a list of coffee shops as detailed in the image be
 ##Things To Note
 The search radius of the map is dictated by the distanceSpan variable in ViewController.swift.
 `let distanceSpan:Double = 8046 //5 mile radius`
+
+##License
+Code released under the [MIT license](https://github.com/Marquis103/Coffee-Locator/blob/master/LICENSE.md)
