@@ -7,12 +7,12 @@ The app consists of a map and a list of coffee shops as detailed in the image be
 
 ![alt text](https://github.com/Marquis103/Coffee-Locator/blob/master/coffeescreenshot.png)
 
-##How to Install
+## How to Install
 `git clone https://github.com/Marquis103/Coffee-Locator.git`
 
-##Things To Note
+## Things To Note
 The search radius of the map is dictated by the distanceSpan variable in ViewController.swift.
 `let distanceSpan:Double = 8046 //5 mile radius`
 
-##License
+## License
 Code released under the [MIT license](https://github.com/Marquis103/Coffee-Locator/blob/master/LICENSE.md)
